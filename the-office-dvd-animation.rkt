@@ -44,7 +44,6 @@
 (define-struct dvd (x y dx dy cc))
 ;; dvd is (make-dvd Natural[0, WIDTH],Natural[0, WIDTH], Integer, Integer)
 ;; interp. (make-dvd x y dx dy) is a dvd-logo with x and y coordinates and velocities and current logo color
-;;            the x and y are the placement of the cow
 ;;            x and y are in screen coordinates (pixels)
 ;;            dx and dy are pixels per tick
 ;;            cc is the current color of the logo
