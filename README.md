@@ -19,3 +19,32 @@ Ex. (main (make-dvd CTR-X CTR-Y 3 -3 "blue")) starts DVD logo at center (from CT
 Mid-animation, the user can manipulate the location of the dvd logo by:
 - pressing the space bar to reset logo position to center screen
 - left-clicking within the animation space to change logo's coordinates to that location (unless the logo will not fit on screen where selected)
+
+
+
+## sink_blob.rkt
+
+### Summary
+This program simulates a single instant of percolation of heavier "solid" blobs towards the bottom of a test tube they share with lighter "bubble" blobs.
+
+### Description
+Per code comments, start animation with (sink lob) where:
+- ListOfBlob contains a list of elements in their initial state
+- Blob is always one of "solid" or "bubble"
+- (sink lob) returns the list after solids have sunk 1 place (if bubbles are present further in the list)
+
+
+
+## making-rain-lists.rkt
+
+### Summary
+This program simulates falling rain, with each new drop created at the position of the mouse click.
+
+### Description
+Per code comments, start animation with (main empty) where:
+- empty refers to the starting ListOfDrops
+- Drops are structs containing x and y coordinates
+
+
+### Controls
+The user can create new drops of rain by left-clicking within the animation space
