@@ -58,33 +58,30 @@ Simulates the classic arcade game of the same name. The user tries to shoot down
 ### Description
 Start animation with (main 0). The following are functions used within the program, originating with the big-bang function
 big-bang
- 	1. move-world - calculates each item's new position by adding speed to current position. New invaders are randomly created, offscreen missiles are deleted, and any colliding missiles and invaders are removed from their respective lists.
-  		1.1 remove-collision
-				1.1.1 collect-colliding-missiles
-					1.1.1.1 overlap-missiles
-						1.1.1.1.1 overlap?
-				1.1.2 remove-collision-helper
- 		1.2 create-invaders
-			1.3 move-invaders
-				1.3.1 move-invader
-			1.4 next-missiles
-        1.4.1 onscreen-missiles
-					1.4.1.1 onscreen?
-			  1.4.2 move-missiles
-					1.4.2.1 move-missile
-			1.5 next-tank
-
-	 2. render-world (to-draw) - world state is rendered to the screen.
-			2.1 render-invaders
-      2.2 render-missiles
-
-	 3. end-game? (stop-when) - ends game when an invader reaches the bottom of the screen.
-			3.1 any-reach-bottom?
-				3.1.1 reach-bottom?
-
-   4. player-input (on-key) - takes player input to move tank or fire missile
-			4.1 fire-missile
-			4.2 move-tank
+1. move-world - calculates each item's new position by adding speed to current position. New invaders are randomly created, offscreen missiles are deleted, and any colliding missiles and invaders are removed from their respective lists.
+* 1.1 remove-collision
+* 1.1.1 collect-colliding-missiles
+* 1.1.1.1 overlap-missiles
+* 1.1.1.1.1 overlap?
+* 1.1.2 remove-collision-helper
+* 1.2 create-invaders
+* 1.3 move-invaders
+* 1.3.1 move-invader
+* 1.4 next-missiles
+* 1.4.1 onscreen-missiles
+* 1.4.1.1 onscreen?
+* 1.4.2 move-missiles
+* 1.4.2.1 move-missile
+* 1.5 next-tank
+2. render-world (to-draw) - world state is rendered to the screen.
+* 2.1 render-invaders
+* 2.2 render-missiles
+3. end-game? (stop-when) - ends game when an invader reaches the bottom of the screen.
+* 3.1 any-reach-bottom?
+* 3.1.1 reach-bottom?
+4. player-input (on-key) - takes player input to move tank or fire missile
+* 4.1 fire-missile
+* 4.2 move-tank
 
 ### Controls
 The following user inputs are accepted to listed effect
